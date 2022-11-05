@@ -3,13 +3,10 @@
 
 let elements = [];
 
-function gameElements(name, sprite, ...otherSprites) {
-    let mesSprites = []
-    for (let otherSprite of otherSprites) mesSprites.push(otherSprite);
-
+function gameElements(name, sprite) {
     this.name = name;
     this.sprite = sprite;
-    this.states = mesSprites;
+    this.states = {};
 }
 
 function createSprite(name, imgSource, ...others) {
@@ -20,12 +17,19 @@ function createSprite(name, imgSource, ...others) {
 
     if (!canIConstruct) return console.log(`error: game element "` + name + `" already exists`);
     else {
-        let gameElement = new gameElements(name, imgSource, ...others);
+        let gameElement = new gameElements(name, imgSource);
         elements.push(gameElement);
+        for (let other of others) {
+            let splitVar = other.split(" "),
+                cusObj = splitVar[0],
+                cusSprite = splitVar[1];
+            
+            elements[elements.length - 1].states[cusObj] = cusSprite;
+        }
     }
 }
 
-function add({ name, position, scale, origin, sprite, layer }) {
+function add({ name, position, scale, origin, sprite }) {
     let spriteSrc = "";
     console.log(elements)
 
@@ -33,9 +37,7 @@ function add({ name, position, scale, origin, sprite, layer }) {
         if (e.name == name) {
             if (sprite == undefined) spriteSrc = e.sprite;
             else {
-                e.states.forEach((elem, idx) => {
-                    if (idx == sprite) spriteSrc = elem;
-                });
+                if(e.states[sprite] != undefined) spriteSrc = e.states[sprite];
             }
         }
     });
@@ -73,11 +75,14 @@ function add({ name, position, scale, origin, sprite, layer }) {
 
 /* EXAMPLE OFF ADDING THINGS
 
-createSprite("EXAMPLE", "Images/X.png", "Images/Y.png", "Images/Z.png");
+createSprite("EXAMPLE", "Images/X.png", 'angry Images/Y.png', 'sad Images/Z.png');
 
 let testChar = add({
     name: "EXAMPLE",
     position: [200, 200],
     scale: 5,
-    origin: "middle"
-});*/
+    origin: "middle",
+    sprite: "lol"
+});
+
+//setTimeout(() => {testChar.remove()}, 2000); */
