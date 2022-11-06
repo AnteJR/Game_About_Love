@@ -31,7 +31,6 @@ function createSprite(name, imgSource, ...others) {
 
 function add({ name, position, scale, origin, sprite }) {
     let spriteSrc = "";
-    console.log(elements)
 
     elements.forEach((e, i) => {
         if (e.name == name) {

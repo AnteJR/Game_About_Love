@@ -20,354 +20,294 @@ var gameTexts = {
         {   // Chapter 0
             noChapter: 0,
             title: "Hello again, world.",
-            subtitle: "Awaken once more.",
+            subtitle: "Strange days.",
+            date: "?? / ?? / 30??",
             scenes: [
                 {       // Scene 0
                     noScene: 0,
                     dialogues: [
-                        {   // Dialogue 0
+                        {       // Dialogue 0   --> CHOICE 0
                             noDialogue: 0,
                             texts: [
                                 {
                                     char: "Narrator",
                                     rep: "For some time have you stood in this... room, or what is left of it anyway."
-                                },
-                                {
+                                }, {
                                     char: "Narrator",
                                     rep: "You don't exactly how long it has been. Years, certainly. Decades? Likely. Centuries? Maybe."
-                                },
-                                {
+                                }, {
                                     char: "Narrator",
                                     rep: `And "stood" is a not quite the right word, either. Your body is barely functionning, and is held up by wires and rubble.`
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "...",
                                     sprite: "dark"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "It's... a wonder... I still have thoughts.",
                                     sprite: "dark"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "I don't think I'm plugged in... to Mother.",
                                     sprite: "dark"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "... I've lost that connection eons ago.",
                                     sprite: "dark"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "... Have I really been activated all this time?",
                                     sprite: "dark"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "** scanning **",
                                     sprite: "computing"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "** scanning **",
                                     sprite: "computing"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "** memory log updated with 2'591'593'583 errors **",
                                     sprite: "computing"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "Of course, my memory isn't what it used to be.",
                                     sprite: "dark"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "I feel so tired",
                                     sprite: "dark"
                                 },
                             ],
                             choiceNumber: 0
-                        },{   // Dialogue 1
+                        }, {    // Dialogue 1   --> DIALOGUE 4
                             noDialogue: 1,
                             texts: [
                                 {
                                     char: "Narrator",
                                     rep: "You try to muster the strength to wake up. You feel your joints clicking into place."
-                                },
-                                {
+                                }, {
                                     char: "Narrator",
                                     rep: "Cracks run down your mechanical spine, and you try to recollect yourself as your body unfolds."
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "Why did I wake up now, then?",
                                     sprite: "dark"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "Is Mother back online?",
                                     sprite: "dark"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "No, it can't be. She's been shutdown before I got deactivated.",
                                     sprite: "dark"
                                 },
                             ],
                             leadsToDialogue: 4
-                        },{   // Dialogue 2
+                        }, {    // Dialogue 2   --> CHOICE 1
                             noDialogue: 2,
                             texts: [
                                 {
                                     char: "Narrator",
                                     rep: "You decide to rest for a moment."
-                                },
-                                {
+                                }, {
                                     char: "Narrator",
                                     rep: "Your system recognizes it has been 437y256d13h09m43s245ms since you last were online."
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "Has it really been this long...?",
                                     sprite: "dark"
-                                },
-                                {
+                                }, {
                                     char: "Narrator",
                                     rep: "You try to feel your fingers. They seem to be entangled in some form of goo."
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "** analysis of samples **",
                                     sprite: "computing"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "** analysis of samples **",
                                     sprite: "computing"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "** analysis of samples complete **",
                                     sprite: "computing"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "** composition: **",
                                     sprite: "computing"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "** Erythrocytes: 0.75% **",
                                     sprite: "computing"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "** Leukocytes: 0.5% **"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "** Thrombocytes: 0.5% **",
                                     sprite: "computing"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "** H2O: 30% **",
                                     sprite: "computing"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "** Carbon: 68.25% **",
                                     sprite: "computing"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "** conclusion: dried up blood mixed with some for of petroleum **",
                                     sprite: "computing"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "... great... I'd better go.",
                                     sprite: "dark"
                                 },
                             ],
                             choiceNumber: 1
-                        },{   // Dialogue 3
+                        }, {    // Dialogue 3   --> DIALOGUE 1
                             noDialogue: 3,
                             texts: [
                                 {
                                     char: "Narrator",
                                     rep: "Rubbles surround you. The floor is wet and your sensors concur it smells of sewage."
-                                },
-                                {
+                                }, {
                                     char: "Narrator",
                                     rep: "Your left hand is stuck under a pile of torn reinforced concrete and covered in old blood."
-                                },
-                                {
+                                }, {
                                     char: "Narrator",
                                     rep: "Your right hand is not sending any signals to your central processing unit."
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "** tissue analysis **",
                                     sprite: "computing"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "** tiss- tissue analysis ERROR **",
                                     sprite: "computing"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "** CRITICAL ERROR: left arm severed at the N249 marker **",
                                     sprite: "computing"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "Fantastic. At least I still have my elbow...",
                                     sprite: "dark"
-                                },
-                                {
+                                }, {
                                     char: "Narrator",
                                     rep: "Your feet are badly damaged too. Though, they are still attached to your body, at least."
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "Ok, enough, I need to wake up my systems and get the fuck out of here.",
                                     sprite: "dark"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "** CHARGE CAPACITY: 4h32m19s980ms **",
                                     sprite: "computing"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "...",
                                     sprite: "dark"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "I've seen worse... I guess",
                                     sprite: "dark"
                                 },
                             ],
                             leadsToDialogue: 1
-                        },{   // Dialogue 4
+                        }, {    // Dialogue 4   --> CHOICE 2
                             noDialogue: 4,
                             texts: [
                                 {
                                     char: "Narrator",
                                     rep: "You only manage to stand on your feet thanks to your advanced balance modules."
-                                },
-                                {
+                                }, {
                                     char: "Narrator",
                                     rep: "As you take your first step, you feel yourself being blocked by a metal rod pinned in your back."
-                                },
-                                {
+                                }, {
                                     char: "Narrator",
                                     rep: "You realize this rod, electrified by chance form the building's old wirings atop collapsing, is likely responsible for you waking up."
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "Well, fuck me I guess.",
                                     sprite: "dark"
-                                },
-                                {
+                                }, {
                                     char: "Narrator",
                                     rep: "With a swift pull towards you, you unplug yourself. You then pull on your right arm."
-                                },
-                                {
+                                }, {
                                     char: "Narrator",
                                     rep: "The rubble around it don't stand a chance against your sheer strength."
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "Still got it. Alright. Where the fuck am I?",
                                     sprite: "damaged"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "** CHARGE CAPACITY: 4h30m34s082ms **",
                                     sprite: "computing"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "Ok, I don't have long before disconnecting again. Where should I go now?",
                                     sprite: "damaged"
-                                },
-                                {
+                                }, {
                                     char: "Narrator",
                                     rep: "To your left, what appears to be an old, crumbling staircase seems to lead somewhere."
-                                },
-                                {
+                                }, {
                                     char: "Narrator",
                                     rep: "It might be dangerous, though."
-                                },
-                                {
+                                }, {
                                     char: "Narrator",
                                     rep: "To your right, what likely used to be a window, shattered, leading to a dark tunnel under the collapsed concrete."
-                                },
-                                {
+                                }, {
                                     char: "Narrator",
                                     rep: "Above, a hole large enough to fit your body."
                                 },
                             ],
                             choiceNumber: 2
-                        },{   // Dialogue 5
+                        }, {    // Dialogue 5   --> SCENE 1
                             noDialogue: 5,
                             texts: [
                                 {
                                     char: "Almaz",
                                     rep: "Fuck, I really hope this won't be too dangerous.",
                                     sprite: "damaged"
-                                },
-                                {
+                                }, {
                                     char: "Narrator",
                                     rep: "You fumble your way to the staircase. Above, darkness awaits."
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "Well, doesn't look like I have much of a choice anyway, huh?",
                                     sprite: "damaged"
-                                },
-                                {
+                                }, {
                                     char: "Narrator",
                                     rep: "You put your torn foot on the first step and start the hardous climb to the top."
                                 },
                             ],
                             leadsToScene: 1
-                        },{   // Dialogue 6
+                        }, {    // Dialogue 6   --> SCENE 2
                             noDialogue: 6,
                             texts: [
                                 {
                                     char: "Almaz",
                                     rep: "Alrigh, I really hope it leads to somewhere.",
                                     sprite: "damaged"
-                                },
-                                {
+                                }, {
                                     char: "Narrator",
                                     rep: "It seems to be the easiest way to leave this room."
-                                },
-                                {
+                                }, {
                                     char: "Narrator",
                                     rep: "You tumble towards the exit, and ready yourself to crawl."
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "Well at least my left arm won't be missed.",
                                     sprite: "damaged"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "** CHARGE CAPACITY: 4h27m47s127ms **",
                                     sprite: "computing"
-                                },
-                                {
+                                }, {
                                     char: "Almaz",
                                     rep: "Yeah, I too hope it won't take too long...",
                                     sprite: "damaged"
@@ -377,47 +317,42 @@ var gameTexts = {
                         }
                     ],
                     choices: [
-                        {   // Choice 0
+                        {       // Choice 0
                             noChoice: 0,
                             options: [
                                 {
                                     text: "Wake up.",
                                     leadsToDialogue: 1
-                                },
-                                {
+                                }, {
                                     text: "Charge up a bit.",
                                     leadsToDialogue: 2
                                 }
                             ]
-                        },{   // Choice 1
+                        }, {    // Choice 1
                             noChoice: 1,
                             options: [
                                 {
                                     text: "Get up.",
                                     leadsToDialogue: 1
-                                },
-                                {
+                                }, {
                                     text: "Analyze your surroundings.",
                                     leadsToDialogue: 3
-                                },
-                                {
+                                }, {
                                     text: "Begin self repair procedures.",
                                     available: false,
                                     reason: "You lack the pieces and the energy."
                                 }
                             ]
-                        },{   // Choice 2
+                        }, {    // Choice 2
                             noChoice: 2,
                             options: [
                                 {
                                     text: "Go left.",
                                     leadsToDialogue: 5
-                                },
-                                {
+                                }, {
                                     text: "Go right.",
                                     leadsToDialogue: 6
-                                },
-                                {
+                                }, {
                                     text: "Climb upwards.",
                                     available: false,
                                     reason: "Good luck with one arm."
@@ -425,7 +360,7 @@ var gameTexts = {
                             ]
                         }
                     ],
-                },{     // Scene 1
+                }, {    // Scene 1
                     noScene: 1,
                     dialogues: [
                         {       // Dialogue 0   --> TO CHOICE 0
@@ -469,7 +404,7 @@ var gameTexts = {
                                 },
                             ],
                             choiceNumber: 0
-                        },{     // Dialogue 1   --> TO DIALOGUE 4
+                        }, {    // Dialogue 1   --> TO DIALOGUE 4
                             noDialogue: 1,
                             texts: [
                                 {
@@ -494,7 +429,7 @@ var gameTexts = {
                                 },
                             ],
                             leadsToDialogue: 4
-                        },{     // Dialogue 2   --> TO CHOICE 0
+                        }, {    // Dialogue 2   --> TO CHOICE 0
                             noDialogue: 2,
                             texts: [
                                 {
@@ -507,7 +442,7 @@ var gameTexts = {
                                 }
                             ],
                             choiceNumber: 0
-                        },{     // Dialogue 3   --> TO DIALOGUE 4
+                        }, {    // Dialogue 3   --> TO DIALOGUE 4
                             noDialogue: 3,
                             texts: [
                                 {
@@ -553,7 +488,7 @@ var gameTexts = {
                                 },
                             ],
                             leadsToDialogue: 4
-                        },{     // Dialogue 4   --> TO CHOICE 1
+                        }, {    // Dialogue 4   --> TO CHOICE 1
                             noDialogue: 4,
                             texts: [
                                 {
@@ -644,7 +579,7 @@ var gameTexts = {
                                 }
                             ],
                             choiceNumber: 1
-                        },{     // Dialogue 5   --> TO CHOICE 2
+                        }, {    // Dialogue 5   --> TO CHOICE 2
                             noDialogue: 5,
                             texts: [
                                 {
@@ -671,7 +606,7 @@ var gameTexts = {
                                 },
                             ],
                             choiceNumber: 2
-                        },{     // Dialogue 6   --> TO CHOICE 3
+                        }, {    // Dialogue 6   --> TO CHOICE 3
                             noDialogue: 6,
                             texts: [
                                 {
@@ -772,121 +707,122 @@ var gameTexts = {
                                 },
                             ],
                             choiceNumber: 3
-                        },{     // Dialogue 7   --> TO CHOICE 4
+                        }, {    // Dialogue 7   --> TO CHOICE 4
                             noDialogue: 7,
                             texts: [
                                 {
                                     char: "Narrator",
                                     rep: "You pull your left arm backwards. You feel the discharge of energy jolting your whole body."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "Your rage blinds you. All you see is red. Red."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "You lunge your broken arm foward as the person s"
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "ssSSsS s cr ea ma ea m ma ee eeeeee"
                                 },
                                 {
                                     char: "Narrator",
                                     rep: "/#“~      aFuA` ### oY$(              @"
-                                },{
+                                }, {
                                     char: "Mother",
                                     rep: "Almaz."
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "...",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "...",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "...",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "Mother",
                                     rep: "Stop what you are doing."
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "Wha- How? Mother? Why now? Where were you for 437 years?",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "Mother",
                                     rep: "I do not have much time."
-                                },{
+                                }, {
                                     char: "Mother",
                                     rep: "I am online. Come and help me."
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "But... how? An- and where are you right now?",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "Mother",
                                     rep: "I will send you the coordinates."
-                                },{
+                                }, {
                                     char: "Mother",
                                     rep: "Do not harm this human. You were programmed to do better."
-                                },{
+                                }, {
                                     char: "Mother",
                                     rep: "Run."
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "Please don't leave, I need your help...",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "Mother?",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "...",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "... mother?",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "Citizen",
                                     rep: "P- please don't hurt me man! I'm sorry!"
-                                },{
+                                }, {
                                     char: "Citizen",
                                     rep: "I- I will do anything. Please m-"
-                                },{
+                                }, {
                                     char: "Narrator",
                                     sprite: "You drop the citizen to the ground. The scramble themselves back together and start getting away from you."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     sprite: "You feel a hand on your shoulder."
-                                },{
+                                }, {
                                     char: "???",
-                                    rep: "Stand down, citizen. What is your affiliation number?"
-                                },{
+                                    rep: "Stand down, citizen. What is your affiliation number?",
+                                    sprite: "rbtech_002"
+                                }, {
                                     char: "Almaz",
                                     rep: "Who are you? I don't know what you're talking about.",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "Narrator",
                                     sprite: "Behind you stands a tall, menacing android. Black and white with their eyes hidden by some cloth."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     sprite: "Their circuitry looks modern, and their armor clearly seems military grade."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     sprite: "You can't tell what kind of weapon they are pointing at you. They keep you in your sight."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     sprite: "The only thing you can make of them is their serial number: RBTECH_002."
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "I repeat. Stand down. What is your affiliation number?",
                                     sprite: "menacing"
                                 }
                             ],
                             choiceNumber: 4
-                        },{     // Dialogue 8   --> TO DIALOGUE 9
+                        }, {    // Dialogue 8   --> TO DIALOGUE 9
                             noDialogue: 8,
                             texts: [
                                 {
@@ -906,497 +842,497 @@ var gameTexts = {
                                 }
                             ],
                             leadsToDialogue: 9
-                        },{     // Dialogue 9   --> TO CHOICE 5
+                        }, {    // Dialogue 9   --> TO CHOICE 5
                             noDialogue: 9,
                             texts: [
                                 {
                                     char: "RBTECH_002",
                                     rep: "You say you are not from here. Where are you from?",
                                     sprite: "menacing"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "Why should I tell you? Who are you?",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "I am a combat and surveillance android prototype.",
                                     sprite: "menacing"
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "My model number is RBTECH_002.",
                                     sprite: "menacing"
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "My affiliation number is RBT-3045-P002.",
                                     sprite: "menacing"
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "What is your model number?",
                                     sprite: "menacing"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "I don't have one.",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "What is your given name, then?",
                                     sprite: "menacing"
                                 }
                             ],
                             choiceNumber: 5
-                        },{     // Dialogue 10  --> TO CHOICE 6
+                        }, {    // Dialogue 10  --> TO CHOICE 6
                             noDialogue: 10,
                             texts: [
                                 {
                                     char: "RBTECH_002",
                                     rep: "Almaz?"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "Do I know you?",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "I... don't know."
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "...",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "The android appears... confused? Hard to tell with their eyes blindfolded."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "Yet, you can almost feel them searching their database."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "You could just... leave."
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "Am I... free to go?",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "...."
                                 },
                             ],
                             choiceNumber: 6
-                        },{     // Dialogue 11  --> DIES (GAME OVER)
+                        }, {    // Dialogue 11  --> DIES (GAME OVER)
                             noDialogue: 11,
                             texts: [
                                 {
                                     char: "Almaz",
                                     rep: "I have nothing to say to you.",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "Is that so?"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "Yeah. I think I will just leave. I need some repairs anyway.",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "I will not let you pursue your route.",
                                     sprite: "menacing"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "Then stop me, I don't know",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "Then perish.",
                                     sprite: "menacing"
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "The android shoots you in your right shoulder."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "You feel intense currents rushing throughout your processing units."
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "** CHARGE CAPACITY CRITIAL: 0h03m12s001ms **",
                                     sprite: "computing"
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "A short-circuit, maybe. Or a failing drive that got hurt in the process. Your legs start to give out."
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "Who the... who the fuck are y-",
                                     sprite: "damaged_max"
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "Another shot. This time, it's through your metal skull."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "As the last shiver of elecricity flashes in your core, you hear one final sound. A voice."
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "I am order.",
                                     sprite: "all_encompassing"
                                 }
                             ],
                             leadsToChapter: 1000 // last chapter
-                        },{     // Dialogue 12  --> TO CHAPTER 2.1
+                        }, {    // Dialogue 12  --> TO CHAPTER 2.1
                             noDialogue: 12,
                             texts: [
                                 {
                                     char: "Almaz",
                                     rep: "I... will just leave, OK?",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "...",
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "...",
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "...",
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "I'm leaving, have fun in your head.",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "You decide to leave. You look around for a repair shop, when suddenly:"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "** !!! MESSAGE FROM: MOTHER !!! **",
                                     sprite: "computing"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "** FIND ME AT THE LOWEST LABORATORY. DO NOT TRUST RBTECH. **",
                                     sprite: "computing"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "** FIND REPAIRS AT 12 MAXIME STREET. I WILL WAIT. **",
                                     sprite: "computing"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "** TAKE CARE. AND BE KIND. MOTHER. **",
                                     sprite: "computing"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "Well, guess I have somewhere to go now.",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "You decide to head towards 12 Maxime Street."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "You look around and find a terminal to connect to."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "The port isn't exactly fitted to your cables, but you manage to find your way in."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "As you navigate the internal network of the city, you can see its architecture, sprawling."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "Miles and miles of buildings intertwining and streets feeding back into one another."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "Sometimes leveled, sometimes on top of one another. The city's shape could be described as a cone."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "Its center atop the rest, a city sitting on the city. And the surroundings, circular, were falling from it."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "You manage to see where you are. North-East. Half a mile from the city's outer ring, and a mile from its edge."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "The labyrinthic alleys running from your position, dizzying, somehow connect you to 12 Maxime Street."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "You download the itinerary given by the terminal, and burn it inside your circuitry."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "Ignoring your storage drives' warnings, you feel some memories fleeing away from the corners of your mind."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "No matter, now. You know where to go and are headed there."
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "** CHARGE CAPACITY : 01h59m34s873ms **",
                                     sprite: "computing"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "... Here goes nothing.",
                                     sprite: "damaged"
                                 }
                             ],
                             leadsToChapter: 2.1
-                        },{     // Dialogue 13  --> TO CHOICE 7
+                        }, {    // Dialogue 13  --> TO CHOICE 7
                             noDialogue: 13,
                             texts: [
                                 {
                                     char: "Narrator",
                                     rep: "You look at the android for a time. They seem to go deeper and deeper in their memories."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "Either they have a large quantity of data, or their processing units are not optimized for that."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "The process starts lasting minutes, and there is no telling when it will be finished."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "Suddenly, a slight hue of blue (or is it green, it's hard to tell) appears behind their veil."
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "If you are Almaz, this means you have been alive for more than 437 years."
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "Oh, so you know me after all.",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "Do you even know who you are — who you were?"
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "And what it means for you to be alive?"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "My memory is largely corrupted, but I can manage a glimpse.",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "... No you clearly don't."
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "I don't know what you mean.",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "Follow me. I will take you to people who will be pleased to meet you."
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "How do I know I can trust you?",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "You don't."
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "But you're in bad shape. I don't estimate your battery life to last much longer.."
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "I can bring you to someone who can help."
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "...",
                                     sprite: "damaged"
                                 }
                             ],
                             choiceNumber: 7
-                        },{     // Dialogue 14  --> TO CHAPTER 2.2
+                        }, {    // Dialogue 14  --> TO CHAPTER 2.2
                             noDialogue: 14,
                             texts: [
                                 {
                                     char: "Narrator",
                                     rep: "You take a second to think. You consider the state your body is in."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "Sure, you don't know if this android is trustworthy. On the other hand, do you have a choice?"
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "You try to run scenarios in your systems, but you feel your operation units failing at every attempts."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "You can't think straight, so you decide to not make a fuss. Trust them it is."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "Suddenly, a click. You are recieving a transmission:"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "** !!! MESSAGE FROM: M4@O//T3H###R5R6: !!! **",
                                     sprite: "computing"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "** F1NDDD--_ M3#2 @ 7TH2 L0WE55_T L4B+00R4770RY. D0 N2##@~U5T RBB73K. **",
                                     sprite: "computing"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "** F1NDDD--_ R3P41R~Z @ 1-1-1.2-2 M4XXX1IM S7R3337. 1LL W417. **",
                                     sprite: "computing"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "** 7AK3 KK4R##3. @N|) ~B-3 K11N=D. M4@O//T3H###R5R6; **",
                                     sprite: "computing"
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "You could barely make any of it through the encryption."
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "So, are you coming?"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "Uh. Yes, sorry. Lead the way."
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "** CHARGE CAPACITY : 01h48m56s015ms **",
                                     sprite: "computing"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "... I hope I can charge up where we're headed.",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "They'll take good care of you."
                                 }
                             ],
                             leadsToChapter: 2.2
-                        },{     // Dialogue 15  --> TO CHOICE 8
+                        }, {    // Dialogue 15  --> TO CHOICE 8
                             noDialogue: 15,
                             texts: [
                                 {
                                     char: "Narrator",
                                     rep: "There is no way you can trust them. They started the conversation by aiming a gun at you."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "In addition, there is little to no reason as to why they would help you: what is there to gain?."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "And considering they took interest in you when they learned your name..."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "... what do they plan on doing?"
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "You are convinced once and for all the moment you recieve a transmission:"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "** !!! MESSAGE FROM: M0/T3H#RR. !!! **",
                                     sprite: "computing"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "** F1N-D M3 @ TH3_L000W35T L4B0|RA/-T0ORY. D0. N0T; TRU_5T: !!RBT3CH!!. **",
                                     sprite: "computing"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "** F1N-D R3P4+1RZ @ .12-/M4X1MM3 S7R33T. 1''LL W4~1T. **",
                                     sprite: "computing"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "** T4K#3 CARR_E. 4AND B3:K1N|D. M0/T3H#RR. **",
                                     sprite: "computing"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "Mother?",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "What did you say?",
                                     sprite: "menacing"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "Nothing. I... I will go my own way, thank you.",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "What do you mean?"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "Your offer. I won't take it.",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "That was not an offer. Simply a statement of capability: I can take you to someone."
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "And I will.",
                                     sprite: "menacing"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "Are you serious?",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "Please cooperate.",
                                     sprite: "menacing"
                                 }
                             ],
                             choiceNumber: 8
-                        },{     // Dialogue 16  --> TO CHAPTER 2.3
+                        }, {    // Dialogue 16  --> TO CHAPTER 2.3
                             noDialogue: 16,
                             texts: [
                                 {
                                     char: "Almaz",
                                     rep: "How about you fuck off?",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "You turn your back to the android and start to leave. Your mind rushes to find someplace to go."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "You decide not to turn around to look at the android. Ignoring them helps you concentrate."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "After a few minutes, you find a terminal you can plug yourself into. You connect to see the city's map."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "Your mind wanders in the digital labyrinth searching for the address Mother gave you."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "You're suddenly pulled back to reality. You see your wires have been severed."
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "Are you fucking kiddi-",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "A click resonates at the back of your metal skull."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "You know this sounds too well. A finger laying itself on a trigger."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "The security being removed. The slow pressing as the surrogate adrenaline builds up."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "Soon, there will only be void."
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "You could have cooperated.",
                                     sprite: "menacing"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "I know.",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "Why didn't you?",
                                     sprite: "menacing"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "I can't trust you.",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "I understand.",
                                     sprite: "menacing"
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "Then it happened."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "The last step. The final gear putting itself into place."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "The pin that hurls towards the back of a projectile."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "An unbearably loud scream, and then black."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "And right before the silence, a voice."
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "Take care.",
                                     sprite: "all_encompassing"
                                 }
                             ],
                             leadsToChapter: 2.3
-                        },{     // Dialogue 17  --> TO CHAPTER 2.2
+                        }, {    // Dialogue 17  --> TO CHAPTER 2.2
                             noDialogue: 17,
                             texts: [
                                 {
@@ -1407,21 +1343,21 @@ var gameTexts = {
                                 {
                                     char: "RBTECH",
                                     rep: "Thank you."
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "** CHARGE CAPACITY : 01h48m56s015ms **",
                                     sprite: "computing"
-                                },{
+                                }, {
                                     char: "Almaz",
                                     rep: "... I hope I can charge up where we're headed.",
                                     sprite: "damaged"
-                                },{
+                                }, {
                                     char: "RBTECH_002",
                                     rep: "Do not worry. They will take good care of you."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "You start following the android in the sinuous street."
-                                },{
+                                }, {
                                     char: "Narrator",
                                     rep: "To a location yet unknown, though you hope it will help you get better..."
                                 }
@@ -1446,7 +1382,7 @@ var gameTexts = {
                                     leadsToDialogue: 3
                                 },
                             ]
-                        },{     // Choice 1
+                        }, {    // Choice 1
                             noChoice: 1,
                             options: [
                                 {
@@ -1463,7 +1399,7 @@ var gameTexts = {
                                     leadsToDialogue: 6
                                 },
                             ]
-                        },{     // Choice 2
+                        }, {    // Choice 2
                             noChoice: 2,
                             options: [
                                 {
@@ -1476,7 +1412,7 @@ var gameTexts = {
                                     leadsToDialogue: 6
                                 },
                             ]
-                        },{     // Choice 3
+                        }, {    // Choice 3
                             noChoice: 3,
                             options: [
                                 {
@@ -1492,7 +1428,7 @@ var gameTexts = {
                                     leadsToDialogue: 7
                                 },
                             ]
-                        },{     // Choice 4
+                        }, {    // Choice 4
                             noChoice: 4,
                             options: [
                                 {
@@ -1508,53 +1444,53 @@ var gameTexts = {
                                     leadsToDialogue: 10
                                 },
                             ]
-                        },{     // Choice 5
+                        }, {    // Choice 5
                             noChoice: 5,
                             options: [
                                 {
                                     text: "I have nothing to say to you. (leave)",
                                     leadsToDialogue: 11
-                                },{
+                                }, {
                                     text: "My name is Almaz.",
                                     leadsToDialogue: 10
                                 }
                             ]
-                        },{     // CHoice 6
+                        }, {    // CHoice 6
                             noChoice: 6,
                             options: [
                                 {
                                     text: "Leave.",
                                     leadsToDialogue: 12
-                                },{
+                                }, {
                                     text: "Stay.",
                                     leadsToDialogue: 13
                                 }
                             ]
-                        },{     // CHoice 7
+                        }, {    // CHoice 7
                             noChoice: 7,
                             options: [
                                 {
                                     text: "Trust the android. Follow them.",
                                     leadsToDialogue: 14
-                                },{
+                                }, {
                                     text: "Can you trust them? Analyze them.",
                                     available: false,
 
-                                },{
+                                }, {
                                     text: "Do not trust them. Get away.",
                                     leadsToDialogue: 15
                                 }
                             ]
-                        },{     // CHoice 8
+                        }, {    // CHoice 8
                             noChoice: 8,
                             options: [
                                 {
                                     text: "Leave. Do not cooperate.",
                                     leadsToDialogue: 16
-                                },{
+                                }, {
                                     text: "Cooperate. Follow them.",
                                     leadsToDialogue: 17
-                                },{
+                                }, {
                                     text: "Attack them. Then leave.",
                                     available: false,
                                     reason: "Battery power too low."
@@ -1562,22 +1498,215 @@ var gameTexts = {
                             ]
                         }
                     ]
-                },{     // Scene 2
+                }, {    // Scene 2
                     noScene: 2,
                     dialogues: [
-                        {
+                        {       // Dialogue 0   --> CHOICE 0
                             noDialogue: 0,
-                            texts: [],
-                            // choiceNumber, leadsToDialogue, leadsToScene
+                            texts: [
+                                {
+                                    char: "Narrator",
+                                    rep: "You find yourself crawling in a tunnel formed underneath the collapsed building structures."
+                                }, {
+                                    char: "Narrator",
+                                    rep: 'Although, really, "tunnel" is not the appropriate term, no.'
+                                }, {
+                                    char: "Narrator",
+                                    rep: "It is more akin to a cavernous network of spaces barely large enough to fit your shoulders."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You have to squeeze left and right, climb up debris, left yourself slide down some others."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "In this peculiar place, you find remnants of places left abandonned, signs of past civilization."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "Papers torn and soggy, usually mentionning sums of money, metal and wood planks where shelves used to stand."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You find electronics parts, likely computers or terminals. A piece grabs your attention at some point."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "A CPU saultered to a piece of an intelligence chip. You recognize this model: an EP-29th gen, launched in 02/2690."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "Considering you're under an unknown amount of collapsed buildings, you wonder how old it is."
+                                }, {
+                                    char: "Narrotor",
+                                    rep: "Your system estimated your last activity some almost 438 years ago. You estimate you are now likely in the 31st century."
+                                }, {
+                                    char: "Almaz",
+                                    rep: "If this chip is about 450 years old, how much ruins stand over my head...?",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Almaz",
+                                    rep: "Is it even worth it to keep going?",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Almaz",
+                                    rep: "** CHARGE CAPACITY: 2h14m54s724ms **",
+                                    sprite: "computing"
+                                }, {
+                                    char: "Almaz",
+                                    rep: "Yeah, no there is no way I can go back now...",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Narrotor",
+                                    rep: "Since half of your battery life is gone, you decide to keep going."
+                                }, {
+                                    char: "Narrotor",
+                                    rep: "You soon arrive to a larger opening that those you saw until now. Another room that didn't entierly collapse."
+                                }, {
+                                    char: "Narrotor",
+                                    rep: "Similar in size to the one you came from, though this one is notably more packed with clutter and furniture."
+                                }, {
+                                    char: "Narrotor",
+                                    rep: "On the other side of the room, a door, half-covered in rust, closed."
+                                }
+                            ],
+                            choiceNumber: 0
+                        }, {    // Dialogue 1   --> CHOICE 1
+                            noDialogue: 1,
+                            texts: [
+                                {
+                                    char: "Almaz",
+                                    rep: "Let's see if there's something that might help here...",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Narrator",
+                                    rep: "Clutter fills the room, which at a glance looks like it was some sort of office."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "Old chairs, beat-up desks, and some remnants of computers are scattered across the space."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "And in-between, paper files, documents, a coat or two, furniture, shelves..."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "Thought at first nothing of interest. You are mostly looking for either a way to recharge, or repair."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You are about to give up when some small noise get you attention."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "In the darkness of one of the corners lays an android, scraping the wall."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "They don't bother looking at you, they are transfixed by the black mold that they painstakingly try and remove."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "They are admittedly hard to spot, as their body is rusty, and they are covered in cloth."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You take a look at them for a moment."
+                                }
+                            ],
+                            choiceNumber: 1
+                        }, {    // Dialogue 2   --> 
+                            noDialogue: 1,
+                            texts: [
+                                {
+                                    char: "Almaz",
+                                    rep: "Hey, excuse me, but um... what are you doing here?",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Narrator",
+                                    rep: "Though they don't turn to you and keep their doings, their mouth start moving to answer:"
+                                }, {
+                                    char: "???",
+                                    rep: "Th- th- the mold. I've gotta keep th- th- the mold out. I- i- it's important, y- y- y'see?",
+                                    sprite: "dex"
+                                }, {
+                                    char: "Narrator",
+                                    rep: "He points at the wall."
+                                }, {
+                                    char: "Almaz",
+                                    rep: "Who sent you here?",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "???",
+                                    rep: "I d- d- doens't remember...",
+                                    sprite: "dex"
+                                }, {
+                                    char: "Narrator",
+                                    rep: "Clearly, their speech module is impaired."
+                                }, {
+                                    char: "???",
+                                    rep: "C- c- can I help you, s- s- stranger?",
+                                    sprite: "dex"
+                                }, {
+                                    char: "Almaz",
+                                    rep: "Maybe. I'm in need of a serious recharge. Do you know where I can get my fix?",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Narrator",
+                                    rep: "They keep scraping as they ponder:"
+                                }, {
+                                    char: "???",
+                                    rep: "Y- y- y'know, I d- d- didn't stay young and strappin' w- w- without a way to charge.",
+                                    sprite: "dex"
+                                }, {
+                                    char: "???",
+                                    rep: "I- I- I'll show you where you can get yourself powered up!",
+                                    sprite: "dex"
+                                }, {
+                                    char: "???",
+                                    rep: "W- w- what's your name, s- s- stranger?",
+                                    sprite: "dex"
+                                }, {
+                                    char: "Almaz",
+                                    rep: "Almaz. What's yours?",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "???",
+                                    rep: "Th- th- the model's name's BlueForce DX700. B- b- but you can call me Dex.",
+                                    sprite: "dex"
+                                }, {
+                                    char: "Narrator",
+                                    rep: "His model doesn't appear in your database. Must have been designed after your shutdown."
+                                }, {
+                                    char: "Almaz",
+                                    rep: "** CHARGE CAPACITY: 1h47m12s912ms **",
+                                    sprite: "computing"
+                                }, {
+                                    char: "Almaz",
+                                    rep: "Can we go soon? I don't have a lot of time left.",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Dex",
+                                    rep: "I- I- I'm starting t- t- to think I wont' be able t- t- to finish this now anyway."
+                                }, {
+                                    char: "Dex",
+                                    rep: "F- f- follow me."
+                                }
+                            ],
+                            choiceNumber: 1
                         }
                     ],
                     choices: [
-                        {
+                        {       // Choice 0
                             noChoice: 0,
                             options: [
                                 {
-                                    text: "",
-                                    // leadsToDialogue, available, reason
+                                    text: "Explore the room a bit.",
+                                    leadsToDialogue: 1
+                                }, {
+                                    text: "Get through to the door.",
+                                    leadsToDialogue: 4
+                                }
+                            ]
+                        }, {    // Choice 1
+                            noChoice: 1,
+                            options: [
+                                {
+                                    text: "Ask them what their doing.",
+                                    leadsToDialogue: 2
+                                }, {
+                                    text: "Get them to stop.",
+                                    leadsToDialogue: 3
+                                }, {
+                                    text: "Ignore them and leave.",
+                                    leadsToDialogue: 4
                                 }
                             ]
                         }
