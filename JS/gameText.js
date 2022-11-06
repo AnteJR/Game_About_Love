@@ -15,7 +15,7 @@
 //                  2.2: RBTECH LAB repairs part (damaged)
 //                  2.3: RBTECH LAB repairs full (dead)
 
-var gameTexts = {
+const gameTexts = {
     chapters: [
         {   // Chapter 0
             noChapter: 0,
@@ -1602,7 +1602,7 @@ var gameTexts = {
                                 }
                             ],
                             choiceNumber: 1
-                        }, {    // Dialogue 2   --> 
+                        }, {    // Dialogue 2   --> DIALOGUE 7
                             noDialogue: 1,
                             texts: [
                                 {
@@ -1660,7 +1660,8 @@ var gameTexts = {
                                 }, {
                                     char: "???",
                                     rep: "Th- th- the model's name's BlueForce DX700. B- b- but you can call me Dex.",
-                                    sprite: "dex"
+                                    sprite: "dex",
+                                    specialEvent: () => characterStats.secondary.dex.metAlmaz = true
                                 }, {
                                     char: "Narrator",
                                     rep: "His model doesn't appear in your database. Must have been designed after your shutdown."
@@ -1677,10 +1678,198 @@ var gameTexts = {
                                     rep: "I- I- I'm starting t- t- to think I wont' be able t- t- to finish this now anyway."
                                 }, {
                                     char: "Dex",
-                                    rep: "F- f- follow me."
+                                    rep: "F- f- follow me.",
+                                    specialEvent: () => characterStats.secondary.dex.trustsAlmaz += 0.1
+                                }, {
+                                    char: "Almaz",
+                                    rep: "Lead the way.",
+                                    sprite: "damaged"
                                 }
                             ],
-                            choiceNumber: 1
+                            leadsToDialogue: 7
+                        }, {    // Dialogue 3   --> CHOICE 2
+                            noDialogue: 3,
+                            texts: [
+                                {
+                                    char: "Narrator",
+                                    rep: "You try to stop the android from scratching their metallic fingers on the wall."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "To do that, you put your hand on their shoulder, and press it against them."
+                                }, {
+                                    char: "???",
+                                    rep: "W- w- what are you doin'? W- w- who are y-",
+                                    sprite: "dex"
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You contract your legs and prepare your back's hydrolic pumps as you keep pressing."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "With a quick gesture, you stand up straight, lifting them up with you."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You spin your hand and release your hand as their body flings to the right."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "Once you can see their face, you catch their neck's wire and slam them against the wall."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "They look confused, their feet dangling in mid-air, their fingers trying to pull away from you grasp."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "Their fingers are damaged by the scraping of the wall; they slowly eroded and shaved their plastic casings over time."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You see them giving you a glance of anguish."
+                                }, {
+                                    char: "???",
+                                    rep: "P- p- please don't hurt me.",
+                                    sprite: "dex",
+                                    specialEvent: () => characterStats.secondary.dex.trustsAlmaz += -0.2
+                                }, {
+                                    char: "Narrator",
+                                    rep: "Their frail body shivers with misfiring information sending due to the intense emotional stress."
+                                }, {
+                                    char: "Almaz",
+                                    rep: "My name is Almaz. What's yours?",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "???",
+                                    rep: "I- I- I'm a DX700, I- I- I call myself D- D- Dex.",
+                                    sprite: "dex",
+                                    specialEvent: () => characterStats.secondary.dex.metAlmaz = true
+                                }, {
+                                    char: "Almaz",
+                                    rep: "Alright, Dex.",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You release them. They fall back on their feet, disgraciously."
+                                }, {
+                                    char: "Dex",
+                                    rep: "I- I- I d- d- don't un- un- unders- s- stand..."
+                                }, {
+                                    char: "Almaz",
+                                    rep: "Hey, calm down. I mean you no harm.",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Dex",
+                                    rep: "I- I- I- I- I- w- w- w- w- want t- t- t- t- t- to g- g- g-... I- I- I-"
+                                }, {
+                                    char: "Almaz",
+                                    rep: "Ugh, by Mother, get back to your senses.",
+                                    sprite: "damaged"
+                                }
+                            ],
+                            choiceNumber: 2
+                        }, {    // Dialogue 4   --> CHOICE 3
+                            noDialogue: 4,
+                            texts: [
+                                {
+                                    char: "Almaz",
+                                    rep: "COME. ON. Get yourself together.",
+                                    sprite: "damaged_angry",
+                                    specialEvent: () => characterStats.main.almaz.relationships.withAndroid += -0.1
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You slap them across their jaw motors."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "The force the slap combined to you hand's reinforced alloys sends Dex to the ground.",
+                                    specialEvent: () => characterStats.secondary.dex.isAlive = false
+                                }, {
+                                    char: "Almaz",
+                                    rep: "Get up.",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Narrator",
+                                    rep: "Dex doesn't respond."
+                                }, {
+                                    char: "Almaz",
+                                    rep: "I said: get up.",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Narrator",
+                                    rep: "Still no response."
+                                }, {
+                                    char: "Almaz",
+                                    rep: "GET. UP.",
+                                    sprite: "damaged_angry"
+                                }, {
+                                    char: "Narrator",
+                                    rep: "No response."
+                                }, {
+                                    char: "Almaz",
+                                    rep: "Ok, seriously, get up, you're making me feel bad.",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You kneel to check up on them."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "They lay, responsless. You launch a diagnosis."
+                                }, {
+                                    char: "Almaz",
+                                    rep: "** analysis damages **",
+                                    sprite: "computing"
+                                }, {
+                                    char: "Almaz",
+                                    rep: "** analysis damages **",
+                                    sprite: "computing"
+                                }, {
+                                    char: "Almaz",
+                                    rep: "** analysis of damages complete **",
+                                    sprite: "computing"
+                                }, {
+                                    char: "Almaz",
+                                    rep: "** results: **",
+                                    sprite: "computing"
+                                }, {
+                                    char: "Almaz",
+                                    rep: "** displacement of the core processing unit in subject's neck **",
+                                    sprite: "computing"
+                                }, {
+                                    char: "Almaz",
+                                    rep: "** displacement caused power systems to shut down **",
+                                    sprite: "computing"
+                                }, {
+                                    char: "Almaz",
+                                    rep: "Fuck.",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Narrator",
+                                    rep: "For lack of a better word, you killed them on the spot."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "The still have some power left in their bank which you could extract."
+                                }
+                            ],
+                            choiceNumber: 3
+                        }, {    // Dialogue 5   --> DIALOGUE 6
+                            noDialogue: 5,
+                            texts: [
+                                {
+                                    char: "Almaz",
+                                    rep: "Alright, I'm leaving.",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Almaz",
+                                    rep: "For what it's worth I'm... I'm sorry.",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You decided there is no use in Dex. You decide to leave"
+                                }
+                            ],
+                            leadsToDialogue: 6
+                        }, {
+                            noDialogue: 6,
+                            texts: [
+                                {
+                                    char: "Narrotr",
+                                    rep: "You don't think there is anything of worth in this room, and decide to proceed through the door."
+                                }
+                            ]
                         }
                     ],
                     choices: [
@@ -1692,7 +1881,7 @@ var gameTexts = {
                                     leadsToDialogue: 1
                                 }, {
                                     text: "Get through to the door.",
-                                    leadsToDialogue: 4
+                                    leadsToDialogue: 6
                                 }
                             ]
                         }, {    // Choice 1
@@ -1706,7 +1895,30 @@ var gameTexts = {
                                     leadsToDialogue: 3
                                 }, {
                                     text: "Ignore them and leave.",
+                                    leadsToDialogue: 6
+                                }
+                            ]
+                        }, {    // Choice 2
+                            noChoice: 2,
+                            options: [
+                                {
+                                    text: "Slap them.",
                                     leadsToDialogue: 4
+                                }, {
+                                    text: "Leave them and go away.",
+                                    leadsToDialogue: 5
+                                }
+                            ]
+                        }, {    // Choice 3
+                            noChoice: 3,
+                            options: [
+                                {
+                                    text: "Recharge your batteries.",
+                                    available: false,
+                                    reason: "Ethical protocols prevent further action"
+                                }, {
+                                    text: "Leave them there.",
+                                    leadsToDialogue: 5
                                 }
                             ]
                         }
