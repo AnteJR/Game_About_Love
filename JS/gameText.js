@@ -1854,22 +1854,65 @@ const gameTexts = {
                                     sprite: "damaged"
                                 }, {
                                     char: "Almaz",
-                                    rep: "For what it's worth I'm... I'm sorry.",
-                                    sprite: "damaged"
+                                    rep: "For what it's worth, I'm... I'm sorry.",
+                                    sprite: "damaged",
+                                    specialEvent: () => characterStats.main.almaz.stats.empathy += 0.1
                                 }, {
                                     char: "Narrator",
                                     rep: "You decided there is no use in Dex. You decide to leave"
                                 }
                             ],
                             leadsToDialogue: 6
-                        }, {
+                        }, {    // Dialogue 6   --> CHOICE 4
                             noDialogue: 6,
                             texts: [
                                 {
                                     char: "Narrotr",
                                     rep: "You don't think there is anything of worth in this room, and decide to proceed through the door."
+                                }, {
+                                    char: "Narrotr",
+                                    rep: "As the door creaks open, you are greeted with a faint neon light. This new room has electricity."
+                                }, {
+                                    char: "Narrotr",
+                                    rep: "More than that: it's inhabited. Or has been recently."
+                                }, {
+                                    char: "Narrotr",
+                                    rep: "There are empty cans of food littered across the floor next to an electric oven."
+                                }, {
+                                    char: "Narrotr",
+                                    rep: "You check the expiry date: 07/3095. This confirms you are likely in the 3000s."
+                                }, {
+                                    char: "Narrotr",
+                                    rep: "You look around to see if there isn't some way to recharge yourself."
+                                }, {
+                                    char: "Narrotr",
+                                    rep: "You wish you could just plug yourself straight to the electrical system, but know it's too dangerous."
+                                }, {
+                                    char: "Narrotr",
+                                    rep: "Though there are no adapters for you, you find a pile of android parts in the back of the room."
+                                }, {
+                                    char: "Narrotr",
+                                    rep: "Rummaging through them, you find enough to at least fix your legs. Your arm and back will have to wait."
                                 }
-                            ]
+                            ],
+                            choiceNumber: 4
+                        }, {    // Dialogue 7
+
+                        }, {    // Dialogue 8
+
+                        }, {    // Dialogue 9
+                            noDialogue: 9,
+                            texts: [
+                                {
+                                    char: "Narrator",
+                                    rep: "You pick the parts up, namely, two small-factor hydrolic pressure handlers and a surrogate tendon.",
+                                    specialEvent: () => { if(characterStats.secondary.dex.trustsAlmaz < 0.5) characterStats.main.almaz.stats.empathy += -0.1 }
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You then sit yourself down, and start opening the hatches to below your knees to access the inner machinery of your legs."
+                                }
+                            ],
+
                         }
                     ],
                     choices: [
@@ -1902,7 +1945,7 @@ const gameTexts = {
                             noChoice: 2,
                             options: [
                                 {
-                                    text: "Slap them.",
+                                    text: "Wake them up. Slap them.",
                                     leadsToDialogue: 4
                                 }, {
                                     text: "Leave them and go away.",
@@ -1919,6 +1962,17 @@ const gameTexts = {
                                 }, {
                                     text: "Leave them there.",
                                     leadsToDialogue: 5
+                                }
+                            ]
+                        }, {    // Choice 4
+                            noChoice: 4,
+                            options: [
+                                {
+                                    text: "Install the parts.",
+                                    leadsToDialogue: 9
+                                }, {
+                                    text: "Leave them here.",
+                                    leadsToDialogue: 8
                                 }
                             ]
                         }
