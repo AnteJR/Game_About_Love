@@ -14,6 +14,7 @@
 //                  2.1: repair shop
 //                  2.2: RBTECH LAB repairs part (damaged)
 //                  2.3: RBTECH LAB repairs full (dead)
+//              1000 : DEATH (with parameters)
 
 const gameTexts = {
     chapters: [
@@ -936,11 +937,11 @@ const gameTexts = {
                                     sprite: "menacing"
                                 }, {
                                     char: "Almaz",
-                                    rep: "Then stop me, I don't know",
+                                    rep: "Stop me.",
                                     sprite: "damaged"
                                 }, {
                                     char: "RBTECH_002",
-                                    rep: "Then perish.",
+                                    rep: "... then perish.",
                                     sprite: "menacing"
                                 }, {
                                     char: "Narrator",
@@ -971,7 +972,7 @@ const gameTexts = {
                                     sprite: "all_encompassing"
                                 }
                             ],
-                            leadsToChapter: 1000 // last chapter
+                            leadsToChapter: 1000 // DEATH
                         }, {    // Dialogue 12  --> TO CHAPTER 2.1
                             noDialogue: 12,
                             texts: [
@@ -1286,7 +1287,7 @@ const gameTexts = {
                                     rep: "You know this sounds too well. A finger laying itself on a trigger."
                                 }, {
                                     char: "Narrator",
-                                    rep: "The security being removed. The slow pressing as the surrogate adrenaline builds up."
+                                    rep: "The security is being removed. The slow pressing as the surrogate adrenaline builds up."
                                 }, {
                                     char: "Narrator",
                                     rep: "Soon, there will only be void."
@@ -1675,10 +1676,12 @@ const gameTexts = {
                                     sprite: "damaged"
                                 }, {
                                     char: "Dex",
-                                    rep: "I- I- I'm starting t- t- to think I wont' be able t- t- to finish this now anyway."
+                                    rep: "I- I- I'm starting t- t- to think I wont' be able t- t- to finish this now anyway.",
+                                    sprite: "dex"
                                 }, {
                                     char: "Dex",
                                     rep: "F- f- follow me.",
+                                    sprite: "dex",
                                     specialEvent: () => characterStats.secondary.dex.trustsAlmaz += 0.1
                                 }, {
                                     char: "Almaz",
@@ -1867,52 +1870,297 @@ const gameTexts = {
                             noDialogue: 6,
                             texts: [
                                 {
-                                    char: "Narrotr",
+                                    char: "Narrator",
                                     rep: "You don't think there is anything of worth in this room, and decide to proceed through the door."
                                 }, {
-                                    char: "Narrotr",
+                                    char: "Narrator",
                                     rep: "As the door creaks open, you are greeted with a faint neon light. This new room has electricity."
                                 }, {
-                                    char: "Narrotr",
+                                    char: "Narrator",
                                     rep: "More than that: it's inhabited. Or has been recently."
                                 }, {
-                                    char: "Narrotr",
+                                    char: "Narrator",
                                     rep: "There are empty cans of food littered across the floor next to an electric oven."
                                 }, {
-                                    char: "Narrotr",
+                                    char: "Narrator",
                                     rep: "You check the expiry date: 07/3095. This confirms you are likely in the 3000s."
                                 }, {
-                                    char: "Narrotr",
+                                    char: "Narrator",
                                     rep: "You look around to see if there isn't some way to recharge yourself."
                                 }, {
-                                    char: "Narrotr",
+                                    char: "Narrator",
                                     rep: "You wish you could just plug yourself straight to the electrical system, but know it's too dangerous."
                                 }, {
-                                    char: "Narrotr",
+                                    char: "Narrator",
                                     rep: "Though there are no adapters for you, you find a pile of android parts in the back of the room."
                                 }, {
-                                    char: "Narrotr",
+                                    char: "Narrator",
                                     rep: "Rummaging through them, you find enough to at least fix your legs. Your arm and back will have to wait."
                                 }
                             ],
                             choiceNumber: 4
-                        }, {    // Dialogue 7
-
-                        }, {    // Dialogue 8
-
-                        }, {    // Dialogue 9
+                        }, {    // Dialogue 7   --> DIALOGUE 9
+                            noDialogue: 7,
+                            texts: [
+                                {
+                                    char: "Narrator",
+                                    rep: "Dex stands up on their fragile, shaking legs. Their back arched. Looks like they are hurting."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "They walk slowly to the door, ignoring their body hitting debris, tables, or the handle at first."
+                                }, {
+                                    char: "Dex",
+                                    rep: "He- he- here we go.",
+                                    sprite: "dex"
+                                }, {
+                                    char: "Narrator",
+                                    rep: "Their left hand grabs the handle and they start putting their whole weight on it. They totter on entering."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "As the door creaks open, you see neon lights on the ceiling, some of them working."
+                                }, {
+                                    char: "Almaz",
+                                    rep: "So this room has electricity. That's good.",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Narrator",
+                                    rep: "Dex doesn't acknoledge your remark. They go straight to a pile of android parts in the corner."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You can't help but notice the littering on the floor:"
+                                }, {
+                                    char: "Narrator",
+                                    rep: "There are dozens of empty food cans scattered across the room, some next to a turned-off electric oven."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You point towards the cans and say:"
+                                }, {
+                                    char: "Almaz",
+                                    rep: "What's up with that? You don't have to eat, don't you?",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Dex",
+                                    rep: "S- s- sometimes human come here when th- th- they don't have anywhere else t- to go.",
+                                    sprite: "dex"
+                                }, {
+                                    char: "Almaz",
+                                    rep: "So we are close to civilization? That's good to hear. I'm serious need of repair",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You pick one of the cans up."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You check the expiry date: 01/3094. This confirms you are likely in the 3000s."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You throw the can away. The noise it makes when hitting the ground echoes through the room."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You look around to see if there isn't some way to recharge yourself."
+                                }, {
+                                    char: "Almaz",
+                                    rep: "I wish I could just plug myself straight to the electrical system, but I know it's too dangerous.",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You turn to Dex."
+                                }, {
+                                    char: "Almaz",
+                                    rep: "Do you know where I can get some power? I am in a dire position here.",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Dex",
+                                    rep: "H- ho- how bad is it?",
+                                    sprite: "dex"
+                                }, {
+                                    char: "Almaz",
+                                    rep: "** CHARGE CAPACITY: 0h57m23s742ms **",
+                                    sprite: "computing"
+                                }, {
+                                    char: "Almaz",
+                                    rep: "I've got less than an hour, actually.",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Narrator",
+                                    rep: "Scanning the room, you find no adapter for you."
+                                }, {
+                                    char: "Dex",
+                                    rep: "M- m- maybe there is something here th- that might help?",
+                                    sprite: "dex"
+                                }, {
+                                    char: "Narrator",
+                                    rep: "They point to the pile of android parts they are seated on."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You go there to have a better look, and start rummaging through the pars."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You find enough to at least fix your legs. Your arm, your back and core systems will have to wait."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You show the parts you found to Dex."
+                                }, {
+                                    char: "Almaz",
+                                    rep: "Better than nothing I guess. Can I take those?",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Dex",
+                                    rep: "S- s- sur thing, s- s- stranger!",
+                                    sprite: "dex"
+                                }
+                            ],
+                            leadsToDialogue: 9
+                        }, {    // Dialogue 8   --> CHOICE 5
+                            noDialogue: 8,
+                            texts: [
+                                {
+                                    char: "Narrator",
+                                    rep: "After a looking around a bit, you see that there isn't much awaiting you, and decide to leave."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "There is a steep ventilation opening to your right, and an old, dusty staircase on your left."
+                                }
+                            ],
+                            choiceNumber: 5
+                        }, {    // Dialogue 9   --> DIALOGUE 8 OR 10
                             noDialogue: 9,
                             texts: [
                                 {
                                     char: "Narrator",
                                     rep: "You pick the parts up, namely, two small-factor hydrolic pressure handlers and a surrogate tendon.",
-                                    specialEvent: () => { if(characterStats.secondary.dex.trustsAlmaz < 0.5) characterStats.main.almaz.stats.empathy += -0.1 }
+                                    specialEvent: () => { if (characterStats.secondary.dex.trustsAlmaz < 0.5) characterStats.main.almaz.stats.empathy += -0.1 }
                                 }, {
                                     char: "Narrator",
-                                    rep: "You then sit yourself down, and start opening the hatches to below your knees to access the inner machinery of your legs."
+                                    rep: "You then sit yourself down, and start opening the hatches below your knees to access the inner machinery of your legs."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You disconnect the latches of both hydrolic pressure handlers, unplug their power cords, and unscrew their pumps."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "In your left leg, you remove the handler and search deeper in your calf to reach the severed tendon."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You twist the lower half to disconnect it, and press a small lever above the other half to un-block it."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "Once all the relevant parts are removed, you start replacing them, starting by the left surrogate tendon system.",
+                                    specialEvent: () => characterStats.main.almaz.damage.leftLeg = false
+                                }, {
+                                    char: "Narrator",
+                                    rep: "After that, the handlers, which you take time to connect correctly to your power source.",
+                                    specialEvent: () => characterStats.main.almaz.damage.rightLeg = false
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You then fire up your calibrating software to make sure everything works. After 2 minutes, all is in order."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You stand up, feeling more strength in your legs, and finding better balance."
+                                }, {
+                                    char: "Almaz",
+                                    rep: "Well, that's a good start, I hope I will get lucky like that again.",
+                                    sprite: "damaged"
                                 }
                             ],
-
+                            leadsToDialogue: () => { if (characterStats.secondary.dex.trustsAlmaz > 0.5) return 10; else return 8; }
+                        }, {    // Dialogue 10
+                            noDialogue: 10,
+                            texts: [
+                                {
+                                    char: "Almaz",
+                                    rep: "Anyway, I think I should get going. I need to find a way to recharge.",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Dex",
+                                    rep: "Y- Y- You d- d- do tha-",
+                                    sprite: "dex"
+                                }, {
+                                    char: "Dex",
+                                    rep: "...",
+                                    sprite: "dex"
+                                }, {
+                                    char: "Dex",
+                                    rep: "...",
+                                    sprite: "dex"
+                                }, {
+                                    char: "Dex",
+                                    rep: "Er-",
+                                    sprite: "dex"
+                                }, {
+                                    char: "Almaz",
+                                    rep: "Are... you in working order?",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Dex",
+                                    rep: "//// ERROR //// FAILED TO REACH CENTRAL SURROGATE NERVOUS SYSTEM",
+                                    sprite: "dex"
+                                }, {
+                                    char: "Dex",
+                                    rep: "REBOOTING ATTEMPTs: 1'000. SHUTTING DOWN BEFORE CRITICAL POWER DRAW",
+                                    sprite: "dex"
+                                }, {
+                                    char: "Dex",
+                                    rep: "FIND REPAIRS AT YOUR LOCAL TMCBOT WORKSHOP",
+                                    sprite: "dex"
+                                }, {
+                                    char: "Almaz",
+                                    rep: "... Dex?",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Dex",
+                                    rep: "FIND REPAIRS AT YOUR LOCAL TMCBOT WORKSHOP",
+                                    sprite: "dex"
+                                }, {
+                                    char: "Almaz",
+                                    rep: "...",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Dex",
+                                    rep: "FIND REPAIRS AT YOUR LOCAL TMCBOT WORKSHOP",
+                                    sprite: "dex"
+                                }, {
+                                    char: "Dex",
+                                    rep: "//// SHUTTING DOWN ////",
+                                    sprite: "dex"
+                                }, {
+                                    char: "Narrator",
+                                    rep: "After brief tremor, Dex' body stops moving, their eyes livid screens of black."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You reach for their shoulder to shake them up."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "..."
+                                }, {
+                                    char: "Almaz",
+                                    rep: "No response.",
+                                    sprite: "damaged"
+                                }, {
+                                    char: "Narrator",
+                                    rep: "You look at Dex for a while, or what's left of them."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "Hard to believe their body didn't give in sooner. Most of their circuits is covered in rust."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "Their joints were creaking incessantly, most likely due to a lack of lubrication."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "And what is there to say about their speech module. Maybe it was a problem with their core processor."
+                                }, {
+                                    char: "Narrator",
+                                    rep: "It's not a power failure that caused them to fail. Maybe there is still some power left to spare?"
+                                }, {
+                                    char: "Almaz",
+                                    rep: "** CHARGE CAPACITY: 1h14m51s888ms **",
+                                    sprite: "computing"
+                                }, {
+                                    char: "Almaz",
+                                    rep: "I don't know if I can allow myself to go on without power...",
+                                    sprite: "damaged"
+                                }
+                            ],
+                            choiceNumber: 6
                         }
                     ],
                     choices: [
@@ -1931,7 +2179,7 @@ const gameTexts = {
                             noChoice: 1,
                             options: [
                                 {
-                                    text: "Ask them what their doing.",
+                                    text: "Ask them what they are doing.",
                                     leadsToDialogue: 2
                                 }, {
                                     text: "Get them to stop.",
@@ -1975,10 +2223,43 @@ const gameTexts = {
                                     leadsToDialogue: 8
                                 }
                             ]
+                        }, {    // Choice 5
+                            noChoice: 5,
+                            options: [
+                                {
+                                    text: "Go in the vent.",
+                                    available: () => { if (characterStats.main.almaz.damage.leftLeg == true) return false; else return true; },
+                                    reason: () => { if (characterStats.main.almaz.damage.leftLeg == true) return "Your legs are still broken."; else return null; },
+                                    leadsToDialogue: () => { if (characterStats.main.almaz.damage.leftLeg == true) return null; else return 12; }
+                                }, {
+                                    text: "Go to the stairs.",
+                                    leadsToDialogue: 11
+                                }
+                            ]
+                        }, {    // Choice 6
+                            noChoice: 6,
+                            options: [
+                                {
+                                    text: "Go in the vent.",
+                                }, {
+                                    text: "Go to the stairs.",
+                                    leadsToDialogue: 11
+                                }
+                            ]
+
                         }
                     ]
                 }
             ]
         },
+        {   // Chapter 1
+            noChapter: 1,
+            title: "Hello world...",
+            subtitle: "... fucked up, fucked up world",
+            date: "13 / 11 / 3142",
+            scenes: [
+
+            ]
+        }
     ],
 }

@@ -7,7 +7,17 @@ const characterStats = {
             metLove: false,
             trustsLove: 0.5,
 
-            isDamaged: true,
+            damage: {
+                eye: false,
+                head: true,
+                leftLeg: true,
+                rightLeg: true,
+                leftArm: true,
+                rightArm: false,
+                back: true,
+                systems: true
+            },
+            
             upgrades: {
                 eye: false,
                 legs: false,
@@ -79,9 +89,3 @@ const characterStats = {
         }
     }
 };
-
-const gameStats = {
-    currentChapter: 0,
-    currentScene: 0,
-    currentChapter: 0,
-}
